@@ -23,6 +23,7 @@ export const OrdersContainer = styled.div`
   flex-direction: column;
   width: 100%;
   margin-top: 24px;
+  border-radius: 8px;
 
   button {
     background-color: #fff;
