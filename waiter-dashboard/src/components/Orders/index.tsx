@@ -1,22 +1,21 @@
-import { Board, Container, OrdersContainer } from './style';
+import { OrderBoard } from '../OrderBoard';
+import { Container } from './style';
 
 export function Orders() {
   return(
     <Container>
-      <Board>
-        <header>
-          <span>🕑</span>
-          <strong>Fila de Espera</strong>
-          <span>(1)</span>
-        </header>
-
-        <OrdersContainer>
-          <button type='button'>
-            <strong>Mesa 2</strong>
-            <span>2 itens</span>
-          </button>
-        </OrdersContainer>
-      </Board>
+      <OrderBoard
+        icon='🕑'
+        title='Fila de espera'
+      />
+      <OrderBoard
+        icon='🧑‍🍳'
+        title='Em preparação'
+      />
+      <OrderBoard
+        icon='✅'
+        title='Pronto!'
+      />
     </Container>
   );
 }
