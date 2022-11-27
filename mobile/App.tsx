@@ -1,4 +1,5 @@
 import { useFonts } from "expo-font";
+import { Main } from "./src/Main";
 
 
 export default function App() {
@@ -11,7 +12,8 @@ export default function App() {
   if(!isFontsLoaded) {
     return null;
   }
+  
   return (
-    
+    <Main />
   );
 }
